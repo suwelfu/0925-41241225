@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4x4 Flip Card Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h1>4x4 翻卡片遊戲</h1>
+    
+    <!-- 開始遊戲的按鈕 -->
+    <button id="start-game">開始遊戲</button>
+    
+    <!-- 更換圖片的按鈕，預設隱藏 -->
+    <button id="change-images" style="display:none;">更換圖片</button>
+
+    <!-- 遊戲板 -->
+    <div class="game-board" style="display:none;">
+        <!-- 卡片會在 JavaScript 中動態生成 -->
+    </div>
+
+    <!-- 遊戲結束畫面，預設隱藏 -->
+    <div id="game-over-screen" style="display:none;">
+        <h2>恭喜！你贏了！</h2>
+        <p>遊玩時間：<span id="time-spent"></span></p>
+        <button id="restart-game">重新開始遊戲</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
